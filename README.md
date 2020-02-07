@@ -1,2 +1,2 @@
 # the-game
-aca empeza la historia
+aca empieza la historia
