@@ -1,4 +1,4 @@
-function Chorizo (lote, kilo, color){
+var Chorizo = (lote, kilo, color) =>{
     this.lote = lote;
     this.kilo = kilo * 2;
     this.color = color;
