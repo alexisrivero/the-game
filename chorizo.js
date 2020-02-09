@@ -1,14 +1,36 @@
-var Chorizo = (lote, kilo, color) =>{
-    this.lote = lote;
-    this.kilo = kilo * 2;
-    this.color = color;
-
-    this.descripcion = var descripcion = () =>{
-        return "este chorizo es del lote " + this.lote + ", pesa: " + this.kilo + ",de color: " + this.color;
+class Embutido{
+    nombre;
+    constructor(nombre){
+        if (nombre){
+            this.nombre = nombre;
+        }
+    }
+    descripcion (){
+        console.log ("este embutido se llama: " + this.nombre);
     }
 }
-let ch1 = new Chorizo(1234, 5, "azul");
-let ch2 = new Chorizo(89832, 1, "rojo");
+class Chorizo extends Embutido{
+    color;
+    peso;
+    procedencia = "pindonga"
+    constructor (peso, color, procedencia){
+        super ("chorizo ");
+        this.peso = peso;
+        this.color = color;
+        if (procedencia){
+            this.procedencia = procedencia;
+        }
+    }
+    descripcion(){
+        console.log ("esto se llama: " + this.nombre);
+        console.log("peso: " + this.peso);
+        console.log ("color: " + this.color);
+        console.log ("procedencia " + this.procedencia);
+    }
+}
 
-console.log(ch1.descripcion());
-console.log(ch2.descripcion());
+
+
+let ch1 = new Chorizo (2, "azul", "the game");
+ch1.descripcion();
+
