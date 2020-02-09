@@ -3,7 +3,7 @@ var Chorizo = (lote, kilo, color) =>{
     this.kilo = kilo * 2;
     this.color = color;
 
-    this.descripcion = function(){
+    this.descripcion = var descripcion = () =>{
         return "este chorizo es del lote " + this.lote + ", pesa: " + this.kilo + ",de color: " + this.color;
     }
 }
