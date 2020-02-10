@@ -1,6 +1,60 @@
-.clase {
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+@media print{
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body div{
+    color: blue;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    display: inline;
+}
+body div div{
+
+}
+body div div div{
+    color: green;
+}
+.negrita {
     font-weight: bold;
 }
-#identificador {
-    color: blue;
+.negrita div {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.error {
+    font-weight: bold;
+    color: red;
+}
+.exito {
+    text-decoration: underline;
+    color: green;
+}
+h1#chorizo {
+    text-decoration: line-through;
+}
+li{
+    color: red;
+}
+li > ul > li {
+    color: yellow
+}
+
+
+
+
+@media(max-width: 1024px) {
+    h1#chorizo{
+        color: red;
+    }
+}
+
+@media(max-width: 640px) {
+    h1#chorizo{
+        color: white;
+    }
 }
