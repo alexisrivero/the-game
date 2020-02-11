@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Chorizo from './components/Chorizo';
 import Thegame from './components/Thegame';
