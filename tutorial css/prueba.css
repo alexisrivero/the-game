@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 150px;
+    width: 350px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+.main_heading {
+    color: red
+}
+.yee {
+    color: blue
+}
+span {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    
+}
+
+.main {
+    color: purple;
+    border: 2px solid #ccc;
+    padding: 1em
+}
+
+.special {
+    color: black;
+    font-weight: bold;
+}
+
+body{
+    color: green;
+}
+.my-class-1 {
+    color: inherit;
+}
+.my-class-2 a {
+    color: initial;
+}
+.my-class-3 a{
+    color:unset;
+}
+
+
+blockquote {
+    background-color: red;
+    border: 2px solid black
+}
+.fix-this {
+    all: unset;
+}
+
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+}
+.notebox.warning {
+    border: 4px solid orange;
+    padding: .5em;
+}
+.notebox.danger {
+    border: 4px solid red;
+    padding: .53m;
+}
+
+article p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+}
+
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+a:hover {
+    color: hotpink;
+}
+
+.box {
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  h2 {
+    background: rgba(255,255,255,0.2);
+  }
+
+img{
+    border: 5px solid black;
+}
