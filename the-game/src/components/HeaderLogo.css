@@ -1,0 +1,9 @@
+.HeaderLogo {
+    float: left;
+    height: 100%;
+}
+
+.HeaderLogo a img {
+    max-width: 100%;
+    max-height: 100%;
+}

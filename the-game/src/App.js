@@ -1,27 +1,19 @@
 import React, { useState } from 'react';
+import {BrowserHistory, BrowserRouter} from 'react-router-dom';
 import './App.css';
-import Chorizo from './components/Chorizo';
-import Thegame from './components/Thegame';
-import CIALOGO from './components/images/logo.jpg';
+import Header from './components/Header';
 
 
-function App() {
-  let texto = "thegame trevisan";
-  const [thegame, setThegame] = useState(false);
-  if (thegame) {
-    texto = "CHICHO FERRIO";
-  }
-  function handleClick() {
-    setThegame(!thegame);
-  }
+
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <h1>{texto}</h1>
-      <button onClick={handleClick}>hola</button>
-      <Thegame />
-      <Chorizo />
-      <img src={CIALOGO} alt="LACIABRO" className="logo" />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header/>
+      </div>
+    </BrowserRouter>
   )
 }
 

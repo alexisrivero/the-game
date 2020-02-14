@@ -1,0 +1,10 @@
+.HeaderMenu {
+    margin: 20px;
+    list-style: none;
+}
+.alineacion-derecha {
+    float: right;
+}
+.alineacion-izquierda {
+    float: left;
+}
