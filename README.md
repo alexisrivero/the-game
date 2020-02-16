@@ -7,8 +7,8 @@ Footer con publicidad
 
 componente App 
 -componente Header
+--componente Logo
 --componente HeaderMenu
---componente Logo 
 
 -componente Contenido
 --componente ListadoResultados
