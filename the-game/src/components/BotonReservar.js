@@ -1,28 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect} from 'react';
+import './BotonReservar.css';
 
-const BotonReservar = (props) => {
-    const [numeroClicks, setNumeroClicks] = useState(0);
-    const [nombre, setNombre] = useState('diego');
-
-    var handleClick = () => {
-        setNumeroClicks(numeroClicks + 1);
-    }
-
-    var handleEffect = () => {
-        if( numeroClicks % 2 == 0) {
-            document.title = "cliqueaste " + numeroClicks + " veces";
-        } else {
-            document.title = 'Impar';
-        }
-    }
-
-    useEffect(handleEffect);
-
+const BotonReservar = () => {
+    alert("Confirmar Reserva")
     return (
-        <li className="HeaderMenuItem">
-            <button onClick={handleClick}>{props.texto}</button>
-        </li>
+        <p className="BotonReservar">
+            <button onClick={BotonReservar}>Reservar</button>
+        </p>
     )
 }
-
 export default BotonReservar

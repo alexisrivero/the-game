@@ -5,11 +5,12 @@ import ItemResultados from './ItemResultado';
 import BotonReservar from './BotonReservar';
 import BotonDetalle from './BotonDetalle';
 
-
 const Contenido = () => {
     return (
         <div classname="Contenido">
             <ListadoResultados />
+            <BotonReservar />
+            <BotonDetalle />
         </div>
     )    
 }
