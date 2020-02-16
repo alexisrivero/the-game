@@ -3,6 +3,11 @@ import './BotonDetalle.css';
 
 const BotonDetalle = () => {
     alert("Detalles")
+//    var handleClick = () => {
+//        setClick (onClick);
+//    }
+
+
     return (
         <p className="BotonDetalle">
             <button onClick={BotonDetalle}>Detalles</button>
