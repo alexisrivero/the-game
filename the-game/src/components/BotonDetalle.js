@@ -1,16 +1,14 @@
 import React, { useState, useEffect} from 'react';
 import './BotonDetalle.css';
 
+//acordarse de bindear la funcion al evento dentro del return, onEvento={funcionEvento}
 const BotonDetalle = () => {
-    alert("Detalles")
-//    var handleClick = () => {
-//        setClick (onClick);
-//    }
-
-
+    var handleClick = () => {
+        alert("Detalles");
+    }
     return (
         <p className="BotonDetalle">
-            <button onClick={BotonDetalle}>Detalles</button>
+            <button onClick={handleClick}>Detalles</button>
         </p>
     )
 }

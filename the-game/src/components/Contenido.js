@@ -7,7 +7,7 @@ import BotonDetalle from './BotonDetalle';
 
 const Contenido = () => {
     return (
-        <div classname="Contenido">
+        <div className="Contenido">
             <ListadoResultados />
             <BotonReservar />
             <BotonDetalle />

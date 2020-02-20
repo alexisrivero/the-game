@@ -5,11 +5,11 @@ const ListadoResultados = () => {
 
 
 return(
-        <body>
+        <div>
             <p className="ListadoResultados">
             the gamepkwpokawdpoawkdwpoakdwapodkawopkdapokd
             </p>
-        </body>
+        </div>
     )
 }
 

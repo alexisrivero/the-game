@@ -2,10 +2,12 @@ import React, { useState, useEffect} from 'react';
 import './BotonReservar.css';
 
 const BotonReservar = () => {
-    alert("Confirmar Reserva")
+    var handleClick = () => {
+        alert("Confirmar Reserva");
+    }
     return (
         <p className="BotonReservar">
-            <button onClick={BotonReservar}>Reservar</button>
+            <button onClick={handleClick}>Reservar</button>
         </p>
     )
 }

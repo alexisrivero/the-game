@@ -1,20 +1,24 @@
 import React from 'react';
+import useAxios from 'axios-hooks';
 import './HeaderMenu.css';
 import HeaderMenuItem from './HeaderMenuItem';
 
 const HeaderMenu = (props) => {
-
-    var traerMenu = () => {
-
+    const [{data, loading, error}, refetch] = useAxios("https://jonasjacek.github.io/colors/data.json");
+    if (loading) {
+        return(<p>Estamos cargando broder</p>);
     }
-    
+    if (error) {
+        return (<p>error broder</p>);
+    }
+
     let clases = 'HeaderMenu alineacion-' + props.alineacion;
 
     return (
         <ul className={clases}>
-            <HeaderMenuItem link="https://cia.net.ar" texto="LA CIA" />
-            <HeaderMenuItem link="https://diego.com.ar" texto="diego" />
-            <HeaderMenuItem link="https://trevisan.net" texto="trevisan" />
+            {data.map(((item,indice) =>
+                <HeaderMenuItem link={indice} texto={item.name} key={indice} color={item.hexString} />
+            ))}
         </ul>
     )
 }

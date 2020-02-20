@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import * as Constants from "../Constants";
 import HeaderMenu from './HeaderMenu';
 import HeaderLogo from './HeaderLogo';
 
