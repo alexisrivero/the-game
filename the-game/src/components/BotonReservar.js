@@ -3,7 +3,7 @@ import './BotonReservar.css';
 
 const BotonReservar = () => {
     var handleClick = () => {
-        alert("Confirmar Reserva");
+        window.alert("Confirmar Reserva");
     }
     return (
         <p className="BotonReservar">
