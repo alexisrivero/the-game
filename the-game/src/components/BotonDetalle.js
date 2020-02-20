@@ -4,7 +4,7 @@ import './BotonDetalle.css';
 //acordarse de bindear la funcion al evento dentro del return, onEvento={funcionEvento}
 const BotonDetalle = () => {
     var handleClick = () => {
-        alert("Detalles");
+        window.alert("Detalles");
     }
     return (
         <p className="BotonDetalle">
