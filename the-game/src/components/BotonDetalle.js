@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import './BotonDetalle.css';
 
 //acordarse de bindear la funcion al evento dentro del return, onEvento={funcionEvento}

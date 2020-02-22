@@ -15,11 +15,13 @@ const HeaderMenu = (props) => {
     let clases = 'HeaderMenu alineacion-' + props.alineacion;
 
     return (
-        <ul className={clases}>
-            {data.map(((item,indice) =>
-                <HeaderMenuItem link={indice} texto={item.name} key={indice} color={item.hexString} />
-            ))}
-        </ul>
+        <div className={clases}>
+            <ul>
+                {data.map(((item,indice) =>
+                    <HeaderMenuItem link={indice} texto={item.name} key={indice} color={item.hexString} />
+                ))}
+            </ul>
+        </div>
     )
 }
 

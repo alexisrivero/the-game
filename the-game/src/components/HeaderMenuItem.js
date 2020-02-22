@@ -9,7 +9,7 @@ const HeaderMenuItem = (props) => {
     }
 
     var handleEffect = () => {
-        if( numeroClicks % 2 == 0) {
+        if( numeroClicks % 2 === 0) {
             document.title = "cliqueaste " + (numeroClicks * 2) + " veces";
         } else {
             document.title = 'Impar';
@@ -18,7 +18,6 @@ const HeaderMenuItem = (props) => {
 
     useEffect(handleEffect);
 
-    let json_color = props.color;
     
     let color_class = "c-" + props.texto.toLowerCase();
 
