@@ -1,9 +1,9 @@
 import React from 'react';
 import './NombreEmpresa.css';
 
-const NombreEmpresa = () => {
+const NombreEmpresa = (props) => {
     return(
-        <li className="NombreEmpresa">Empresa Trevisan</li>
+        <div className="NombreEmpresa">{props.empresa.nombre}</div>
     )
 }
 

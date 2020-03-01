@@ -2,21 +2,31 @@ import React from 'react';
 import useAxios from 'axios-hooks';
 import './HeaderMenu.css';
 import HeaderMenuItem from './HeaderMenuItem';
+import * as Constants from '../Constants';
 
 const HeaderMenu = (props) => {
-    const [{data, loading, error}, refetch] = useAxios("https://jonasjacek.github.io/colors/data.json");
+
+    let url_definitiva = ''
+
+    if(props.url_api) {
+        url_definitiva = props.url_api
+    } else {
+        url_definitiva = Constants.URL_API_COLORES;
+    }    
+    
+    const [{data, loading, error}, refetch] = useAxios(url_definitiva);
     if (loading) {
         return(<p>Estamos cargando broder</p>);
     }
     if (error) {
-        return (<p>error broder</p>);
+        return (<p role='error-message'>error broder</p>);
     }
 
     let clases = 'HeaderMenu alineacion-' + props.alineacion;
 
     return (
         <div className={clases}>
-            <ul>
+            <ul role='menu'>
                 {data.map(((item,indice) =>
                     <HeaderMenuItem link={indice} texto={item.name} key={indice} color={item.hexString} />
                 ))}

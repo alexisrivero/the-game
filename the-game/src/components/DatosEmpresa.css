@@ -1,0 +1,15 @@
+.DatosEmpresa {
+    height: 100%;
+}
+.DatosEmpresa .wrapper-datos {
+    display:inline-block;
+    width: 75%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.DatosEmpresa .la-cueca {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+}

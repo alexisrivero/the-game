@@ -18,12 +18,11 @@ const FooterPublicidad = (props) => {
     }
 
     if (error) {
-        console.log(url_definitiva);
-        return(<p>Error: no se pudo contactar la API de publicidad</p>)
+        return(<p role='error-message'>Error: no se pudo contactar la API de publicidad</p>)
     }
 
     return(
-        <div className="FooterPublicidad">
+        <div className="FooterPublicidad" role='publicidad'>
             <a href={data.publicidad.url}>
                 <img src={data.publicidad.img_url} />
             </a>

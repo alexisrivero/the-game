@@ -1,3 +1,5 @@
 .BotonReservar {
-    float: right;
+    display: inline-block;
+    line-height: 26px;
+    height: 0px;
 }

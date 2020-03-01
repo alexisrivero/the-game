@@ -21,6 +21,7 @@ componente App
 -----componente DireccionEmpresa
 ----componente RatingEmpresa
 ----componente MiniPreviewDisponibilidadEmpresa
+-----DisponibilidadDia
 ---componente PersonalizarBusqueda
 
 -componente Footer

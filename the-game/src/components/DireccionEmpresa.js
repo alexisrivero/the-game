@@ -1,9 +1,9 @@
 import React from 'react';
 import './DireccionEmpresa.css'
 
-const DireccionEmpresa = () => {
+const DireccionEmpresa = (props) => {
     return (
-        <li className="DireccionEmpresa">Avenida Barrientos 367</li>
+        <div className="DireccionEmpresa">{props.empresa.direccion}</div>
     )
 }
 

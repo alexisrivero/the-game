@@ -1,0 +1,10 @@
+.LogoEmpresa {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.LogoEmpresa img {
+    max-width: 80%;
+    max-height: 100%;
+}

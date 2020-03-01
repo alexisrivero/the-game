@@ -1,0 +1,19 @@
+.DisponibilidadDia {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin: 2px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 12px;
+}
+.DisponibilidadDia.disponibilidad_baja {
+    background-color: red;
+}
+.DisponibilidadDia.disponibilidad_media {
+    background-color: yellow;
+}
+.DisponibilidadDia.disponibilidad_alta {
+    background-color: green;
+}

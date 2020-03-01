@@ -1,10 +1,10 @@
 import React from 'react';
 import './LogoEmpresa.css';
 
-const LogoEmpresa = () => {
+const LogoEmpresa = (props) => {
     return(
         <div className="LogoEmpresa">
-            <img src="" />
+            <img src={props.empresa.logo_url} />
         </div>
     )
 }
