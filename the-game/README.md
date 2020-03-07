@@ -1,3 +1,7 @@
--- arreglar tests de ratingempresa
--- agregar estrellas vacías a ratingempresa
--- agregar boton reservar a cada empresa
+-- arreglar datosempresa, borrarlo
+-- armar filtro empresa --- yes
+-- renombrar sugerenciabuscador a listadosugerenciasbuscado --yes
+-- armar componente sugerencia que muestra el valor de busqueda highlighteado
+
+
+

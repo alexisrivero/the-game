@@ -4,6 +4,7 @@ export const LOGO_CIA = require("./components/images/logo.jpg");
 export const URL_API_PUBLICIDAD = "https://cia.net.ar/publicidad.json";
 export const URL_API_EMPRESAS = "https://cia.net.ar/empresas.json"
 export const URL_API_COLORES = "https://jonasjacek.github.io/colors/data.json"
+export const URL_API_CIUDADES = "https://raw.githubusercontent.com/wecodeio/ciudades-argentinas/master/ciudades-argentinas.json"
 export const DATOS_PRUEBA_DISPONIBILIDAD = {
   27: 'baja'
 }

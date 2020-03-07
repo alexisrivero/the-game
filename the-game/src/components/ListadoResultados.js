@@ -3,6 +3,7 @@ import useAxios from 'axios-hooks';
 import * as Constants from '../Constants';
 import './ListadoResultados.css';
 import Empresa from './Empresa';
+import DatosEmpresa from './DatosEmpresa';
 
 
 const ListadoResultados = (props) => {
@@ -29,7 +30,7 @@ const ListadoResultados = (props) => {
             <h1>Listado de resultados</h1>
             <ul>
                 {data.map(((item,indice) =>
-                    <Empresa empresa={item} key={indice} />
+                    <DatosEmpresa empresa={item} key={indice} />
                 ))}
             </ul>
         </div>

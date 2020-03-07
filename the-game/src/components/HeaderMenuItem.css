@@ -1,7 +1,5 @@
 .HeaderMenuItem {
-    display: inline;
-    padding-left: 5px;
-    padding-right: 5px;
+    display: inline-block;
 }
 .c-navy {
     background-color: #000;

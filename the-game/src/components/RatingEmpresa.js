@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faStarHalfAlt ,faStarAndCrescent} from '@fortawesome/free-solid-svg-icons'
+import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'
 import './RatingEmpresa.css';
 
 
@@ -23,7 +24,7 @@ const RatingEmpresa = (props) => {
         media_estrella = true;
     }
 
-    //TODO: calculo las estrellas enteras vacías
+    //calculo las estrellas enteras vacías
     let estrellas_vacias = [];
     let numero_estrellas_vacias = 5 - Math.round(props.empresa.rating);
     for (var i = 0; i < numero_estrellas_vacias; i++) {
@@ -40,9 +41,9 @@ const RatingEmpresa = (props) => {
             {/* chequeo si hay media estrella y si es verdadero la imprimo */}
             {media_estrella && <FontAwesomeIcon icon={faStarHalfAlt} /> }
 
-            {/* TODO: loopeo las estrellas vacias e imprimo un ícono de fontawesome por cada una */}
+            {/*loopeo las estrellas vacias e imprimo un ícono de fontawesome por cada una */}
             {estrellas_vacias.map(((item, indice) =>
-                <FontAwesomeIcon icon={faStarAndCrescent} key={indice} />
+                <FontAwesomeIcon icon={faStarEmpty} key={indice} />
             ))}
 
         </div>

@@ -1,9 +1,12 @@
 .HeaderLogo {
-    float: left;
-    height: 100%;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .HeaderLogo a img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 120px;
+    max-height: 120px;
 }

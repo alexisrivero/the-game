@@ -1,6 +1,7 @@
 .HeaderMenu {
-    margin: 20px;
-    list-style: none;
+    display: inline-block;
+    width: 32%;
+    height: 120px;
 }
 .alineacion-derecha {
     float: right;
