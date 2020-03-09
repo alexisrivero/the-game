@@ -1,7 +1,4 @@
 -- arreglar datosempresa, borrarlo
--- armar filtro empresa --- yes
--- renombrar sugerenciabuscador a listadosugerenciasbuscado --yes
--- armar componente sugerencia que muestra el valor de busqueda highlighteado
-
+-- cambiar sugerencia para que busque/filtre el valor en cualquier posicion, no al principio
 
 
