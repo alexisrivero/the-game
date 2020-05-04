@@ -1,3 +1,6 @@
 .Sugerencia span {
     font-weight: bold;
 }
+.Sugerencia {
+    text-transform: capitalize;
+}
