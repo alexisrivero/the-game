@@ -3,6 +3,7 @@ import './BotonDetalle.css';
 
 //acordarse de bindear la funcion al evento dentro del return, onEvento={funcionEvento}
 const BotonDetalle = () => {
+    let color = 'black';
     var handleClick = () => {
         window.alert("Detalles");
     }
