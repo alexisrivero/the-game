@@ -6,6 +6,11 @@
 
 class Vehiculo:
     _motor = True
+    altura_al_piso = 0
+    velocidad = 0
+    color_chasis = "negro"
+    marca = ""
+    modelo = ""
 
     def __init__(self):
         pass
@@ -19,56 +24,53 @@ class Vehiculo:
 
 
 class Terrestre(Vehiculo):
-    _terrestre = True
+    _terreno_preferido = None
 
     def __init__(self):
-        pass
+        self.altura_al_piso = 1
 
-    def set_terrestre(self, terrestre):
-        self._terrestre = terrestre
-        print("este anda por el piso broder")
+    def set_terreno_preferido(self, terreno):
+        self._terreno_preferido = terreno
 
-    def get_terrestre(self):
-        return self._terrestre
+    def get_terreno_preferido(self):
+        return self._terreno_preferido
+
+    def __str__(self):
+        return "Este vehiculo terrestre es un " + self.marca + "/" + self.modelo + "es de color " + self.color_chasis + " y alcanza una velocidad de " + str(self.velocidad) + " km/h"
 
 
 class Auto(Terrestre):
-    modelo_auto = ""
     cantidad_ruedas = 4
-    color_auto = ""
-    velocidad_maxima = 200
 
     def __init__(self):
-        pass
+        self.velocidad = 200
+        self.set_terreno_preferido("asfalto")
 
     def __str__(self):
-        return "Este auto es un " + self.modelo_auto + " tiene " + str(self.cantidad_ruedas) + " ruedas " + "es de color " + self.color_auto + " y alcanza una velocidad de " + str(self.velocidad_maxima) + " km/h"
+        return super().__str__() + " tiene " + str(self.cantidad_ruedas) + " ruedas"
+    # setters y getters para todas las propiedades
 
 
 class Tanque(Terrestre):
-    modelo_tanque = ""
-    color_tanque = ""
-    velocidad_maxima = 70
 
     def __init__(self):
-        pass
+        self.set_terreno_preferido("cualquiera")
 
     def __str__(self):
-        return "Este tanque es modelo " + self.modelo_tanque + " es de color " + self.color_tanque + " y alcanza una velocidad maxima de " + str(self.velocidad_maxima) + " km/h"
+        return super().__str__() + " y tiene una oruga"
 
 
 auto = Auto()
-auto.modelo_auto = "Ferrari F12"
-auto.color_auto = "negro"
-auto.velocidad_maxima = 300
+auto.marca = "Ferrari"
+auto.modelo = "F12"
+auto.color_chasis = "negro"
+auto.velocidad = 300
 
 print(auto)
 
 tanque = Tanque()
-tanque.modelo_tanque = "T-90A"
-tanque.color_tanque = "Camuflado Verde"
-tanque.tiene_oruga = True
-tanque.tiene_escotilla = True
-tanque.tiene_cañon = True
-
+tanque.marca = "Panzer"
+tanque.modelo = "Scheuhfefuwfufa"
+tanque.color_chasis = "verde"
+tanque.velocidad = 120
 print(tanque)
