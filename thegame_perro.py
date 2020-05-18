@@ -7,12 +7,6 @@ class Perro():
     def __init__(self):
         pass
 
-    def nadar(self):
-        pass
-
-    def vuelo(self):
-        pass
-
 
 class ComportamientoLadrido():
     def __init__(self):
