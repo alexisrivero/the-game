@@ -10,6 +10,9 @@ class Jeans():
     def precio(self):
         pass
 
+    def bajar_bragueta(self):
+        pass
+
 
 class JeanRoto(Jeans):
 
@@ -21,6 +24,9 @@ class JeanRoto(Jeans):
 
     def descripcion(self):
         return "jean roto de diego"
+
+    def bajar_bragueta(self):
+        pass
 
 
 class JeanAjustado(Jeans):
@@ -34,6 +40,9 @@ class JeanAjustado(Jeans):
     def descripcion(self):
         return "jean ajustado de homosex"
 
+    def bajar_bragueta(self):
+        pass
+
 
 class JeanSuelto(Jeans):
 
@@ -45,6 +54,9 @@ class JeanSuelto(Jeans):
 
     def descripcion(self):
         return "jeans de viejo"
+
+    def bajar_bragueta(self):
+        pass
 
 
 class Vendedor():
@@ -157,3 +169,14 @@ print(nueva_campera_parca.descripcion())
 
 nueva_campera_deportiva = vendedor.vender_campera("campera_deportiva")
 print(nueva_campera_deportiva.descripcion())
+
+nueva_campera_1 = vendedor.vender_campera("campera_parca")
+print(nueva_campera_1)
+nueva_campera_2 = vendedor.vender_campera("campera_parca")
+print(nueva_campera_2)
+print("####################################")
+#
+j1 = vendedor.vender_jean("jean_roto")
+###
+
+j1.bajar_bragueta()

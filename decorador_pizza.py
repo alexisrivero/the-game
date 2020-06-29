@@ -9,7 +9,7 @@ class Pizza():
         pass
 
 
-class Topping():
+class Topping(Pizza):
     _pizza = None
 
     def __init__(self):
